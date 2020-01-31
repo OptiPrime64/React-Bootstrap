@@ -16,14 +16,9 @@ function App() {
         <NavigationBar />
         <Jumbotron />
         <Layout>
-
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route component={NoMatch} />
-          </Switch>
-
+          <Home />
+          <About />
+          <Contact />
         </Layout>
       </Router>
     </React.Fragment>
@@ -31,3 +26,10 @@ function App() {
 }
 
 export default App;
+
+/* <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route component={NoMatch} />
+          </Switch> */

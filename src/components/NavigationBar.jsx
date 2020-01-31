@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
+import { HashLink as Link} from 'react-router-hash-link';
 
 const Styles = styled.div`
 .navbar{
@@ -26,17 +27,17 @@ export const NavigationBar = () => (
                 <Nav className="ml-auto">
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/"> Home</Link>
+                            <Link smooth to="/#sectionhome"> Home</Link>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/about"> About</Link>
+                            <Link smooth to="/about/#sectionabout"> About</Link>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/contact"> Contact</Link>
+                            <Link smooth to="/contact/#sectioncontact"> Contact</Link>
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
